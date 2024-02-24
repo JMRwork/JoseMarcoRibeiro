@@ -1,4 +1,4 @@
-package br.edu.infnet;
+package br.edu.infnet.model;
 
 public class Usuario {
     private int id;

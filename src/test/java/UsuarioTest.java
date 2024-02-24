@@ -1,9 +1,9 @@
-import br.edu.infnet.Usuario;
+import br.edu.infnet.model.Usuario;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class Teste {
+public class UsuarioTest {
     private Usuario usuario;
     @BeforeEach
     void setUser() throws Exception {
