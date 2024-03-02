@@ -1,37 +1,34 @@
-import br.edu.infnet.model.Usuario;
+import br.edu.infnet.model.domain.Item;
+import br.edu.infnet.model.domain.Usuario;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class UsuarioTest {
     private Usuario usuario;
+    private Item item = new Item();
     @BeforeEach
     void setUser() throws Exception {
+        Collection<Item> items = new ArrayList<Item>();
+        items.add(item);
         usuario = new Usuario();
         usuario.setId(1);
         usuario.setNome("Abc");
         usuario.setEmail("Abc@email.com");
         usuario.setSenha("12345678");
+        usuario.setInventario(items);
         usuario.setAdmin(true);
     }
     @Test
-    void idDefault() {
+    void testDefault() {
         Assertions.assertEquals(1, usuario.getId());
-    }
-    @Test
-    void nomeDefault() {
         Assertions.assertEquals("Abc",usuario.getNome());
-    }
-    @Test
-    void emailDefault() {
         Assertions.assertEquals("Abc@email.com", usuario.getEmail());
-    }
-    @Test
-    void senhaDefault() {
         Assertions.assertEquals("12345678", usuario.getSenha());
-    }
-    @Test
-    void adminDefault() {
+        Assertions.assertTrue(usuario.getInventario().contains(item));
         Assertions.assertTrue(usuario.isAdmin());
     }
     @Test

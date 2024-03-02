@@ -1,11 +1,17 @@
-package br.edu.infnet.model;
+package br.edu.infnet.model.domain;
+
+import java.util.Collection;
 
 public class Usuario {
     private int id;
     private String nome;
     private String email;
     private String senha;
+    private Collection<Item> inventario;
     private boolean admin;
+
+
+
     public int getId() {
         return id;
     }
@@ -68,5 +74,13 @@ public class Usuario {
         } else {
             return "Esse usuário possui acesso restrito";
         }
+    }
+
+    public Collection<Item> getInventario() {
+        return inventario;
+    }
+
+    public void setInventario(Collection<Item> inventario) {
+        this.inventario = inventario;
     }
 }

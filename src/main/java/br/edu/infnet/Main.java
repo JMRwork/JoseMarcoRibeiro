@@ -1,6 +1,6 @@
 package br.edu.infnet;
 
-import br.edu.infnet.model.Usuario;
+import br.edu.infnet.model.domain.Usuario;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
