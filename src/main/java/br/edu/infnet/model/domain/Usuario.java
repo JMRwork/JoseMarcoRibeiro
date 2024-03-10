@@ -10,7 +10,26 @@ public class Usuario {
     private Collection<Item> inventario;
     private boolean admin;
 
+    public Usuario() {
+    }
 
+    public Usuario(int id, String nome, String email, String senha, boolean admin) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.admin = admin;
+    }
+
+    @Override
+    public String toString() {
+        return "id: " + id +
+                ", " + nome  +
+                ", " + email  +
+                ", inventario: " + inventario +
+                ", admin: " + admin +
+                '}';
+    }
 
     public int getId() {
         return id;

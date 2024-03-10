@@ -4,3 +4,5 @@ O projeto possui uma classe model genérica de "Usuários" e uma cobertura 100% 
 
 Foi escolhido esse contexto por ser muito comum em aplicações onde são requeridas autorização e autenticação.
 Além de ser bastante intuitiva e fácil de ser elaborada.
+
+O arquivo para teste via postman está contido neste repositorio, nomeado como "JoséMarcoRibeiro TP3.postman_collection.json"

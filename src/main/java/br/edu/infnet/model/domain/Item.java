@@ -19,6 +19,16 @@ public class Item {
 
     }
 
+    @Override
+    public String toString() {
+        return "ItemId: " + itemId +
+                ", " + nome  +
+                ", " + descricao  +
+                ", qty: " + quantidade +
+                ", preco: " + preco +
+                '}';
+    }
+
     public int getItemId() {
         return itemId;
     }

@@ -1,13 +1,15 @@
 package br.edu.infnet.model.service;
 
 import br.edu.infnet.model.domain.Item;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class ItemService {
-    private static Map<Integer, Item> items = new HashMap<Integer, Item>();
+    private Map<Integer, Item> items = new HashMap<Integer, Item>();
 
     public void incluir(Item item) {
         items.put(item.getItemId(), item);
